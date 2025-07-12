@@ -1,0 +1,24 @@
+{
+  "version": "1.0.0",
+  "title": "All Pods Healthy in chaos-demo",
+  "description": "Verifies all pods in the chaos-demo namespace are healthy",
+  "steady-state-hypothesis": {
+    "title": "All pods should be healthy",
+    "probes": [
+      {
+        "type": "probe",
+        "name": "all-pods-healthy-in-chaos-demo",
+        "tolerance": true,
+        "provider": {
+          "type": "python",
+          "module": "chaosk8s.probes",
+          "func": "all_pods_healthy",
+          "arguments": {
+            "ns": "chaos-demo"
+          }
+        }
+      }
+    ]
+  },
+  "method": []
+}

@@ -1,0 +1,143 @@
+{
+  "chaoslib-version": "1.44.0",
+  "platform": "Linux-6.8.0-1027-azure-x86_64-with-glibc2.39",
+  "node": "codespaces-099fea",
+  "experiment": {
+    "version": "1.0.0",
+    "title": "Kill NGINX Pod",
+    "description": "Kill the nginx pod in chaos-demo namespace to test remediation",
+    "steady-state-hypothesis": {
+      "title": "All pods should be healthy",
+      "probes": [
+        {
+          "type": "probe",
+          "name": "all-pods-healthy",
+          "tolerance": true,
+          "provider": {
+            "type": "python",
+            "module": "chaosk8s.probes",
+            "func": "all_pods_healthy",
+            "arguments": {
+              "ns": "chaos-demo"
+            },
+            "timeout": 30,
+            "retry-interval": 5
+          }
+        }
+      ]
+    },
+    "method": [
+      {
+        "type": "action",
+        "name": "kill-nginx-pod",
+        "provider": {
+          "type": "python",
+          "module": "chaosk8s.pod.actions",
+          "func": "delete_pods",
+          "arguments": {
+            "label_selector": "app=nginx",
+            "ns": "chaos-demo"
+          }
+        }
+      }
+    ],
+    "dry": null
+  },
+  "start": "2025-07-11T22:40:19.301913+00:00",
+  "status": "failed",
+  "deviated": true,
+  "steady_states": {
+    "before": {
+      "steady_state_met": true,
+      "probes": [
+        {
+          "activity": {
+            "type": "probe",
+            "name": "all-pods-healthy",
+            "tolerance": true,
+            "provider": {
+              "type": "python",
+              "module": "chaosk8s.probes",
+              "func": "all_pods_healthy",
+              "arguments": {
+                "ns": "chaos-demo"
+              },
+              "timeout": 30,
+              "retry-interval": 5
+            }
+          },
+          "output": true,
+          "start": "2025-07-11T22:40:19.303166+00:00",
+          "status": "succeeded",
+          "end": "2025-07-11T22:40:19.319199+00:00",
+          "duration": 0.016033,
+          "tolerance_met": true
+        }
+      ]
+    },
+    "after": {
+      "steady_state_met": false,
+      "probes": [
+        {
+          "activity": {
+            "type": "probe",
+            "name": "all-pods-healthy",
+            "tolerance": true,
+            "provider": {
+              "type": "python",
+              "module": "chaosk8s.probes",
+              "func": "all_pods_healthy",
+              "arguments": {
+                "ns": "chaos-demo"
+              },
+              "timeout": 30,
+              "retry-interval": 5
+            }
+          },
+          "output": null,
+          "start": "2025-07-11T22:40:19.354061+00:00",
+          "status": "failed",
+          "exception": [
+            "Traceback (most recent call last):\n",
+            "  File \"/usr/local/python/3.12.1/lib/python3.12/site-packages/chaoslib/provider/python.py\", line 56, in run_python_activity\n    return func(**arguments)\n           ^^^^^^^^^^^^^^^^^\n",
+            "  File \"/usr/local/python/3.12.1/lib/python3.12/site-packages/chaosk8s/pod/probes.py\", line 355, in all_pods_healthy\n    raise ActivityFailed(m)\n",
+            "chaoslib.exceptions.ActivityFailed: the system is unhealthy\n",
+            "\nDuring handling of the above exception, another exception occurred:\n\n",
+            "chaoslib.exceptions.ActivityFailed: chaoslib.exceptions.ActivityFailed: the system is unhealthy\n"
+          ],
+          "end": "2025-07-11T22:40:19.436159+00:00",
+          "duration": 0.082098,
+          "tolerance_met": false
+        }
+      ]
+    },
+    "during": []
+  },
+  "run": [
+    {
+      "activity": {
+        "type": "action",
+        "name": "kill-nginx-pod",
+        "provider": {
+          "type": "python",
+          "module": "chaosk8s.pod.actions",
+          "func": "delete_pods",
+          "arguments": {
+            "label_selector": "app=nginx",
+            "ns": "chaos-demo"
+          }
+        }
+      },
+      "output": [
+        "nginx-54b9c68f67-ckxrp"
+      ],
+      "start": "2025-07-11T22:40:19.320249+00:00",
+      "status": "succeeded",
+      "end": "2025-07-11T22:40:19.350109+00:00",
+      "duration": 0.02986
+    }
+  ],
+  "rollbacks": [],
+  "end": "2025-07-11T22:40:19.437780+00:00",
+  "duration": 0.13781428337097168
+}

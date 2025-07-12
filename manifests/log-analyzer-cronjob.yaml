@@ -1,0 +1,15 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  name: log-analyzer
+  namespace: logging
+spec:
+  schedule: "*/5 * * * *"
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: analyzer
+              image: tylermac92/log-analyzer:latest
+          restartPolicy: OnFailure

@@ -1,0 +1,29 @@
+groups:
+  - name: pod-health-rules
+    rules:
+      - alert: PodCrashLooping
+        expr: rate(kube_pod_container_status_restarts_total[5m]) > 0.1
+        for: 1m
+        labels:
+          severity: warning
+        annotations:
+          summary: "Pod is restarting too often"
+          description: "Pod {{ $labels.pod }} in namespace {{ $labels.namespace }} is restarting frequently."
+
+      - alert: HighPodCPUUsage
+        expr: rate(container_cpu_usage_seconds_total[5m]) > 0.5
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High CPU usage on pod"
+          description: "Pod {{ $labels.pod }} in namespace {{ $labels.namespace }} is using high CPU."
+
+      - alert: HighPodMemoryUsage
+        expr: container_memory_usage_bytes > 500000000
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: "High memory usage on pod"
+          description: "Pod {{ $labels.pod }} in namespace {{ $labels.namespace }} is using a lot of memory."

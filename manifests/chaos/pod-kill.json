@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "title": "Kill NGINX Pod",
+  "description": "Kill the nginx pod in chaos-demo namespace to test remediation",
+  "steady-state-hypothesis": {
+    "title": "All pods should be healthy",
+    "probes": [
+      {
+        "type": "probe",
+        "name": "all-pods-healthy",
+        "tolerance": true,
+        "provider": {
+          "type": "python",
+          "module": "chaosk8s.probes",
+          "func": "all_pods_healthy",
+          "arguments": {
+            "ns": "chaos-demo"
+          },
+          "timeout": 30,
+          "retry-interval": 5
+        }
+      }
+    ]
+  },
+  "method": [
+    {
+      "type": "action",
+      "name": "kill-nginx-pod",
+      "provider": {
+        "type": "python",
+        "module": "chaosk8s.pod.actions",
+        "func": "delete_pods",
+        "arguments": {
+          "label_selector": "app=nginx",
+          "ns": "chaos-demo"
+        }
+      }
+    }
+  ]
+}

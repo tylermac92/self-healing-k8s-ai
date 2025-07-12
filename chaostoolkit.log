@@ -1,0 +1,583 @@
+[36m[2025-07-11 18:25:30 DEBUG] [__init__:101][39m ###############################################################################
+[36m[2025-07-11 18:25:30 DEBUG] [__init__:102][39m Running command 'run'
+[36m[2025-07-11 18:25:30 DEBUG] [__init__:106][39m Using settings file '/home/codespace/.chaostoolkit/settings.yaml'
+[36m[2025-07-11 18:25:31 DEBUG] [settings:31][39m The Chaos Toolkit settings file could not be found at '/home/codespace/.chaostoolkit/settings.yaml'.
+[36m[2025-07-11 18:25:31 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 18:25:31 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 18:25:31 DEBUG] [caching:24][39m Building activity cache...
+[36m[2025-07-11 18:25:31 DEBUG] [caching:35][39m Cached 3 activities
+[32m[2025-07-11 18:25:31 INFO] [experiment:59][39m Validating the experiment's syntax
+[36m[2025-07-11 18:25:31 DEBUG] [configuration:64][39m Loading configuration...
+[36m[2025-07-11 18:25:31 DEBUG] [secret:79][39m Loading secrets...
+[36m[2025-07-11 18:25:31 DEBUG] [secret:104][39m Done loading secrets
+[36m[2025-07-11 18:25:31 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2025-07-11 18:25:31 ERROR] [run:188][39m could not find Python module 'chaosk8s.probes.probes' in activity 'check-nginx-running'
+[36m[2025-07-11 18:25:31 DEBUG] [run:189][39m could not find Python module 'chaosk8s.probes.probes' in activity 'check-nginx-running'
+[36m[2025-07-11 18:25:51 DEBUG] [__init__:101][39m ###############################################################################
+[36m[2025-07-11 18:25:51 DEBUG] [__init__:102][39m Running command 'discover'
+[36m[2025-07-11 18:25:51 DEBUG] [__init__:106][39m Using settings file '/home/codespace/.chaostoolkit/settings.yaml'
+[36m[2025-07-11 18:25:51 DEBUG] [settings:31][39m The Chaos Toolkit settings file could not be found at '/home/codespace/.chaostoolkit/settings.yaml'.
+[32m[2025-07-11 18:25:51 INFO] [package:22][39m Attempting to download and install package 'chaosk8s'
+[36m[2025-07-11 18:25:52 DEBUG] [package:32][39m 
+[36m[2025-07-11 18:25:52 DEBUG] [package:36][39m failed to install `chaosk8s`
+    =================
+    
+    =================
+    ERROR: Could not find a version that satisfies the requirement chaosk8s (from versions: none)
+    ERROR: No matching distribution found for chaosk8s
+    
+    
+[36m[2025-07-11 18:25:52 DEBUG] [discover:53][39m Failed to discover chaosk8s
+    Traceback (most recent call last):
+      File "/usr/local/python/3.12.1/lib/python3.12/site-packages/chaostoolkit/commands/discover.py", line 46, in discover
+        discovery = disco(
+                    ^^^^^^
+      File "/usr/local/python/3.12.1/lib/python3.12/site-packages/chaoslib/discovery/discover.py", line 46, in discover
+        install(package_name)
+      File "/usr/local/python/3.12.1/lib/python3.12/site-packages/chaoslib/discovery/package.py", line 42, in install
+        raise DiscoveryFailed(msg)
+    chaoslib.exceptions.DiscoveryFailed: failed to install `chaosk8s`
+[31m[2025-07-11 18:25:52 CRITICAL] [discover:54][39m failed to install `chaosk8s`
+[36m[2025-07-11 18:27:21 DEBUG] [__init__:101][39m ###############################################################################
+[36m[2025-07-11 18:27:21 DEBUG] [__init__:102][39m Running command 'run'
+[36m[2025-07-11 18:27:21 DEBUG] [__init__:106][39m Using settings file '/home/codespace/.chaostoolkit/settings.yaml'
+[36m[2025-07-11 18:27:21 DEBUG] [settings:31][39m The Chaos Toolkit settings file could not be found at '/home/codespace/.chaostoolkit/settings.yaml'.
+[36m[2025-07-11 18:27:21 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 18:27:21 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 18:27:21 DEBUG] [caching:24][39m Building activity cache...
+[36m[2025-07-11 18:27:21 DEBUG] [caching:35][39m Cached 3 activities
+[32m[2025-07-11 18:27:21 INFO] [experiment:59][39m Validating the experiment's syntax
+[36m[2025-07-11 18:27:21 DEBUG] [configuration:64][39m Loading configuration...
+[36m[2025-07-11 18:27:21 DEBUG] [secret:79][39m Loading secrets...
+[36m[2025-07-11 18:27:21 DEBUG] [secret:104][39m Done loading secrets
+[36m[2025-07-11 18:27:21 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2025-07-11 18:27:21 ERROR] [run:188][39m could not find Python module 'chaostoolkit_kubernetes.probes.pod' in activity 'check-nginx-running'
+[36m[2025-07-11 18:27:21 DEBUG] [run:189][39m could not find Python module 'chaostoolkit_kubernetes.probes.pod' in activity 'check-nginx-running'
+[36m[2025-07-11 18:27:59 DEBUG] [__init__:101][39m ###############################################################################
+[36m[2025-07-11 18:27:59 DEBUG] [__init__:102][39m Running command 'run'
+[36m[2025-07-11 18:27:59 DEBUG] [__init__:106][39m Using settings file '/home/codespace/.chaostoolkit/settings.yaml'
+[36m[2025-07-11 18:27:59 DEBUG] [settings:31][39m The Chaos Toolkit settings file could not be found at '/home/codespace/.chaostoolkit/settings.yaml'.
+[36m[2025-07-11 18:27:59 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 18:27:59 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 18:27:59 DEBUG] [caching:24][39m Building activity cache...
+[36m[2025-07-11 18:27:59 DEBUG] [caching:35][39m Cached 3 activities
+[32m[2025-07-11 18:27:59 INFO] [experiment:59][39m Validating the experiment's syntax
+[36m[2025-07-11 18:27:59 DEBUG] [configuration:64][39m Loading configuration...
+[36m[2025-07-11 18:27:59 DEBUG] [secret:79][39m Loading secrets...
+[36m[2025-07-11 18:27:59 DEBUG] [secret:104][39m Done loading secrets
+[36m[2025-07-11 18:28:00 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2025-07-11 18:28:00 ERROR] [run:188][39m The python module 'chaosk8s.probes' does not expose a function called 'pod_exists' in probe 'check-nginx-running'
+[36m[2025-07-11 18:28:00 DEBUG] [run:189][39m The python module 'chaosk8s.probes' does not expose a function called 'pod_exists' in probe 'check-nginx-running'
+[36m[2025-07-11 18:28:37 DEBUG] [__init__:101][39m ###############################################################################
+[36m[2025-07-11 18:28:37 DEBUG] [__init__:102][39m Running command 'run'
+[36m[2025-07-11 18:28:37 DEBUG] [__init__:106][39m Using settings file '/home/codespace/.chaostoolkit/settings.yaml'
+[36m[2025-07-11 18:28:37 DEBUG] [settings:31][39m The Chaos Toolkit settings file could not be found at '/home/codespace/.chaostoolkit/settings.yaml'.
+[36m[2025-07-11 18:28:37 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 18:28:37 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 18:28:37 DEBUG] [caching:24][39m Building activity cache...
+[36m[2025-07-11 18:28:37 DEBUG] [caching:35][39m Cached 3 activities
+[32m[2025-07-11 18:28:37 INFO] [experiment:59][39m Validating the experiment's syntax
+[36m[2025-07-11 18:28:37 DEBUG] [configuration:64][39m Loading configuration...
+[36m[2025-07-11 18:28:37 DEBUG] [secret:79][39m Loading secrets...
+[36m[2025-07-11 18:28:37 DEBUG] [secret:104][39m Done loading secrets
+[36m[2025-07-11 18:28:38 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2025-07-11 18:28:38 ERROR] [run:188][39m The python module 'chaosk8s.probes' does not expose a function called 'pod_is_running' in probe 'check-nginx-running'
+[36m[2025-07-11 18:28:38 DEBUG] [run:189][39m The python module 'chaosk8s.probes' does not expose a function called 'pod_is_running' in probe 'check-nginx-running'
+[36m[2025-07-11 18:28:54 DEBUG] [__init__:101][39m ###############################################################################
+[36m[2025-07-11 18:28:54 DEBUG] [__init__:102][39m Running command 'run'
+[36m[2025-07-11 18:28:54 DEBUG] [__init__:106][39m Using settings file '/home/codespace/.chaostoolkit/settings.yaml'
+[36m[2025-07-11 18:28:54 DEBUG] [settings:31][39m The Chaos Toolkit settings file could not be found at '/home/codespace/.chaostoolkit/settings.yaml'.
+[36m[2025-07-11 18:28:54 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 18:28:54 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 18:28:54 DEBUG] [caching:24][39m Building activity cache...
+[36m[2025-07-11 18:28:54 DEBUG] [caching:35][39m Cached 3 activities
+[32m[2025-07-11 18:28:54 INFO] [experiment:59][39m Validating the experiment's syntax
+[36m[2025-07-11 18:28:54 DEBUG] [configuration:64][39m Loading configuration...
+[36m[2025-07-11 18:28:54 DEBUG] [secret:79][39m Loading secrets...
+[36m[2025-07-11 18:28:54 DEBUG] [secret:104][39m Done loading secrets
+[36m[2025-07-11 18:28:55 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2025-07-11 18:28:55 ERROR] [run:188][39m The python module 'chaosk8s.probes' does not expose a function called 'pod_is_running' in probe 'check-nginx-running'
+[36m[2025-07-11 18:28:55 DEBUG] [run:189][39m The python module 'chaosk8s.probes' does not expose a function called 'pod_is_running' in probe 'check-nginx-running'
+[36m[2025-07-11 18:32:07 DEBUG] [__init__:101][39m ###############################################################################
+[36m[2025-07-11 18:32:07 DEBUG] [__init__:102][39m Running command 'run'
+[36m[2025-07-11 18:32:07 DEBUG] [__init__:106][39m Using settings file '/home/codespace/.chaostoolkit/settings.yaml'
+[36m[2025-07-11 18:32:07 DEBUG] [settings:31][39m The Chaos Toolkit settings file could not be found at '/home/codespace/.chaostoolkit/settings.yaml'.
+[36m[2025-07-11 18:32:07 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 18:32:07 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 18:32:07 DEBUG] [caching:24][39m Building activity cache...
+[36m[2025-07-11 18:32:07 DEBUG] [caching:35][39m Cached 1 activities
+[32m[2025-07-11 18:32:07 INFO] [experiment:59][39m Validating the experiment's syntax
+[36m[2025-07-11 18:32:07 DEBUG] [configuration:64][39m Loading configuration...
+[36m[2025-07-11 18:32:07 DEBUG] [secret:79][39m Loading secrets...
+[36m[2025-07-11 18:32:07 DEBUG] [secret:104][39m Done loading secrets
+[36m[2025-07-11 18:32:07 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2025-07-11 18:32:07 ERROR] [run:188][39m argument 'label_selector' is not part of the function signature in activity 'all_pods_healthy'
+[36m[2025-07-11 18:32:07 DEBUG] [run:189][39m argument 'label_selector' is not part of the function signature in activity 'all_pods_healthy'
+[36m[2025-07-11 18:32:13 DEBUG] [__init__:101][39m ###############################################################################
+[36m[2025-07-11 18:32:13 DEBUG] [__init__:102][39m Running command 'run'
+[36m[2025-07-11 18:32:13 DEBUG] [__init__:106][39m Using settings file '/home/codespace/.chaostoolkit/settings.yaml'
+[36m[2025-07-11 18:32:13 DEBUG] [settings:31][39m The Chaos Toolkit settings file could not be found at '/home/codespace/.chaostoolkit/settings.yaml'.
+[36m[2025-07-11 18:32:13 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 18:32:13 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 18:32:13 DEBUG] [caching:24][39m Building activity cache...
+[36m[2025-07-11 18:32:13 DEBUG] [caching:35][39m Cached 1 activities
+[32m[2025-07-11 18:32:13 INFO] [experiment:59][39m Validating the experiment's syntax
+[36m[2025-07-11 18:32:13 DEBUG] [configuration:64][39m Loading configuration...
+[36m[2025-07-11 18:32:13 DEBUG] [secret:79][39m Loading secrets...
+[36m[2025-07-11 18:32:13 DEBUG] [secret:104][39m Done loading secrets
+[36m[2025-07-11 18:32:13 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2025-07-11 18:32:13 ERROR] [run:188][39m argument 'label_selector' is not part of the function signature in activity 'all_pods_healthy'
+[36m[2025-07-11 18:32:13 DEBUG] [run:189][39m argument 'label_selector' is not part of the function signature in activity 'all_pods_healthy'
+[36m[2025-07-11 18:32:41 DEBUG] [__init__:101][39m ###############################################################################
+[36m[2025-07-11 18:32:41 DEBUG] [__init__:102][39m Running command 'run'
+[36m[2025-07-11 18:32:41 DEBUG] [__init__:106][39m Using settings file '/home/codespace/.chaostoolkit/settings.yaml'
+[36m[2025-07-11 18:32:41 DEBUG] [settings:31][39m The Chaos Toolkit settings file could not be found at '/home/codespace/.chaostoolkit/settings.yaml'.
+[36m[2025-07-11 18:32:41 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 18:32:41 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 18:32:41 DEBUG] [caching:24][39m Building activity cache...
+[36m[2025-07-11 18:32:41 DEBUG] [caching:35][39m Cached 1 activities
+[32m[2025-07-11 18:32:41 INFO] [experiment:59][39m Validating the experiment's syntax
+[36m[2025-07-11 18:32:41 DEBUG] [configuration:64][39m Loading configuration...
+[36m[2025-07-11 18:32:41 DEBUG] [secret:79][39m Loading secrets...
+[36m[2025-07-11 18:32:41 DEBUG] [secret:104][39m Done loading secrets
+[36m[2025-07-11 18:32:41 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2025-07-11 18:32:41 ERROR] [run:188][39m an experiment requires a method, which can be empty for only checking steady state hypothesis 
+[36m[2025-07-11 18:32:41 DEBUG] [run:189][39m an experiment requires a method, which can be empty for only checking steady state hypothesis 
+[36m[2025-07-11 18:33:07 DEBUG] [__init__:101][39m ###############################################################################
+[36m[2025-07-11 18:33:07 DEBUG] [__init__:102][39m Running command 'run'
+[36m[2025-07-11 18:33:07 DEBUG] [__init__:106][39m Using settings file '/home/codespace/.chaostoolkit/settings.yaml'
+[36m[2025-07-11 18:33:07 DEBUG] [settings:31][39m The Chaos Toolkit settings file could not be found at '/home/codespace/.chaostoolkit/settings.yaml'.
+[36m[2025-07-11 18:33:07 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 18:33:07 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 18:33:07 DEBUG] [caching:24][39m Building activity cache...
+[36m[2025-07-11 18:33:07 DEBUG] [caching:35][39m Cached 1 activities
+[32m[2025-07-11 18:33:07 INFO] [experiment:59][39m Validating the experiment's syntax
+[36m[2025-07-11 18:33:07 DEBUG] [configuration:64][39m Loading configuration...
+[36m[2025-07-11 18:33:07 DEBUG] [secret:79][39m Loading secrets...
+[36m[2025-07-11 18:33:07 DEBUG] [secret:104][39m Done loading secrets
+[32m[2025-07-11 18:33:07 INFO] [experiment:112][39m Experiment looks valid
+[36m[2025-07-11 18:33:07 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2025-07-11 18:33:07 DEBUG] [run:224][39m Runtime strategies: hypothesis - default / rollbacks - default
+[36m[2025-07-11 18:33:07 DEBUG] [caching:24][39m Building activity cache...
+[36m[2025-07-11 18:33:07 DEBUG] [caching:35][39m Cached 1 activities
+[36m[2025-07-11 18:33:07 DEBUG] [configuration:64][39m Loading configuration...
+[36m[2025-07-11 18:33:07 DEBUG] [secret:79][39m Loading secrets...
+[36m[2025-07-11 18:33:07 DEBUG] [secret:104][39m Done loading secrets
+[36m[2025-07-11 18:33:07 DEBUG] [configuration:161][39m Loading dynamic configuration...
+[32m[2025-07-11 18:33:07 INFO] [run:440][39m Running experiment: All Pods Healthy in chaos-demo
+[36m[2025-07-11 18:33:07 DEBUG] [__init__:67][39m Initializing controls
+[32m[2025-07-11 18:33:07 INFO] [run:471][39m Steady-state strategy: default
+[32m[2025-07-11 18:33:07 INFO] [run:477][39m Rollbacks strategy: default
+[36m[2025-07-11 18:33:07 DEBUG] [__init__:472][39m No controls to apply on 'experiment'
+[36m[2025-07-11 18:33:07 DEBUG] [run:654][39m Running steady-state hypothesis before the method
+[32m[2025-07-11 18:33:07 INFO] [hypothesis:205][39m Steady state hypothesis: All pods should be healthy
+[36m[2025-07-11 18:33:07 DEBUG] [__init__:472][39m No controls to apply on 'hypothesis'
+[36m[2025-07-11 18:33:07 DEBUG] [__init__:472][39m No controls to apply on 'activity'
+[32m[2025-07-11 18:33:07 INFO] [activity:232][39m Probe: all-pods-healthy-in-chaos-demo
+[36m[2025-07-11 18:33:07 DEBUG] [python:33][39m Activity 'all-pods-healthy-in-chaos-demo' loaded from '/usr/local/python/3.12.1/lib/python3.12/site-packages/chaosk8s/pod/probes.py'
+[36m[2025-07-11 18:33:07 DEBUG] [__init__:79][39m Using Kubernetes context 'default' from config '/home/codespace/.kube/config'
+[36m[2025-07-11 18:33:07 DEBUG] [probes:344][39m Found 0 failed and 0 not ready pods
+[36m[2025-07-11 18:33:07 DEBUG] [activity:260][39m   => succeeded with 'True'
+[36m[2025-07-11 18:33:07 DEBUG] [__init__:472][39m No controls to apply on 'activity'
+[36m[2025-07-11 18:33:07 DEBUG] [hypothesis:247][39m allowed tolerance is True
+[32m[2025-07-11 18:33:07 INFO] [hypothesis:260][39m Steady state hypothesis is met!
+[36m[2025-07-11 18:33:07 DEBUG] [__init__:472][39m No controls to apply on 'hypothesis'
+[32m[2025-07-11 18:33:07 INFO] [run:778][39m Playing your experiment's method now...
+[36m[2025-07-11 18:33:07 DEBUG] [__init__:472][39m No controls to apply on 'method'
+[32m[2025-07-11 18:33:07 INFO] [activity:150][39m No declared activities, let's move on.
+[36m[2025-07-11 18:33:07 DEBUG] [__init__:472][39m No controls to apply on 'method'
+[36m[2025-07-11 18:33:07 DEBUG] [run:696][39m Running steady-state hypothesis after the method
+[32m[2025-07-11 18:33:07 INFO] [hypothesis:205][39m Steady state hypothesis: All pods should be healthy
+[36m[2025-07-11 18:33:07 DEBUG] [__init__:472][39m No controls to apply on 'hypothesis'
+[36m[2025-07-11 18:33:07 DEBUG] [__init__:472][39m No controls to apply on 'activity'
+[32m[2025-07-11 18:33:07 INFO] [activity:232][39m Probe: all-pods-healthy-in-chaos-demo
+[36m[2025-07-11 18:33:07 DEBUG] [python:33][39m Activity 'all-pods-healthy-in-chaos-demo' loaded from '/usr/local/python/3.12.1/lib/python3.12/site-packages/chaosk8s/pod/probes.py'
+[36m[2025-07-11 18:33:07 DEBUG] [__init__:79][39m Using Kubernetes context 'default' from config '/home/codespace/.kube/config'
+[36m[2025-07-11 18:33:07 DEBUG] [probes:344][39m Found 0 failed and 0 not ready pods
+[36m[2025-07-11 18:33:07 DEBUG] [activity:260][39m   => succeeded with 'True'
+[36m[2025-07-11 18:33:07 DEBUG] [__init__:472][39m No controls to apply on 'activity'
+[36m[2025-07-11 18:33:07 DEBUG] [hypothesis:247][39m allowed tolerance is True
+[32m[2025-07-11 18:33:07 INFO] [hypothesis:260][39m Steady state hypothesis is met!
+[36m[2025-07-11 18:33:07 DEBUG] [__init__:472][39m No controls to apply on 'hypothesis'
+[32m[2025-07-11 18:33:07 INFO] [run:1072][39m Let's rollback...
+[36m[2025-07-11 18:33:07 DEBUG] [__init__:472][39m No controls to apply on 'rollback'
+[32m[2025-07-11 18:33:07 INFO] [rollback:33][39m No declared rollbacks, let's move on.
+[36m[2025-07-11 18:33:07 DEBUG] [__init__:472][39m No controls to apply on 'rollback'
+[32m[2025-07-11 18:33:07 INFO] [run:598][39m Experiment ended with status: completed
+[36m[2025-07-11 18:33:07 DEBUG] [__init__:472][39m No controls to apply on 'experiment'
+[36m[2025-07-11 18:33:07 DEBUG] [__init__:106][39m Cleaning up controls
+[36m[2025-07-11 18:33:07 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2025-07-11 22:14:07 DEBUG] [__init__:101][39m ###############################################################################
+[36m[2025-07-11 22:14:07 DEBUG] [__init__:102][39m Running command 'run'
+[36m[2025-07-11 22:14:07 DEBUG] [__init__:106][39m Using settings file '/home/codespace/.chaostoolkit/settings.yaml'
+[36m[2025-07-11 22:14:07 DEBUG] [settings:31][39m The Chaos Toolkit settings file could not be found at '/home/codespace/.chaostoolkit/settings.yaml'.
+[36m[2025-07-11 22:14:07 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 22:14:07 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 22:14:07 DEBUG] [caching:24][39m Building activity cache...
+[36m[2025-07-11 22:14:07 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2025-07-11 22:14:07 INFO] [experiment:59][39m Validating the experiment's syntax
+[36m[2025-07-11 22:14:07 DEBUG] [configuration:64][39m Loading configuration...
+[36m[2025-07-11 22:14:07 DEBUG] [secret:79][39m Loading secrets...
+[36m[2025-07-11 22:14:07 DEBUG] [secret:104][39m Done loading secrets
+[36m[2025-07-11 22:14:11 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2025-07-11 22:14:11 ERROR] [run:188][39m could not find Python module 'chaosk8s.pods.actions' in activity 'kill-nginx-pod'
+[36m[2025-07-11 22:14:11 DEBUG] [run:189][39m could not find Python module 'chaosk8s.pods.actions' in activity 'kill-nginx-pod'
+[36m[2025-07-11 22:14:57 DEBUG] [__init__:101][39m ###############################################################################
+[36m[2025-07-11 22:14:57 DEBUG] [__init__:102][39m Running command 'run'
+[36m[2025-07-11 22:14:57 DEBUG] [__init__:106][39m Using settings file '/home/codespace/.chaostoolkit/settings.yaml'
+[36m[2025-07-11 22:14:57 DEBUG] [settings:31][39m The Chaos Toolkit settings file could not be found at '/home/codespace/.chaostoolkit/settings.yaml'.
+[36m[2025-07-11 22:14:57 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 22:14:57 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 22:14:57 DEBUG] [caching:24][39m Building activity cache...
+[36m[2025-07-11 22:14:57 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2025-07-11 22:14:57 INFO] [experiment:59][39m Validating the experiment's syntax
+[36m[2025-07-11 22:14:57 DEBUG] [configuration:64][39m Loading configuration...
+[36m[2025-07-11 22:14:57 DEBUG] [secret:79][39m Loading secrets...
+[36m[2025-07-11 22:14:57 DEBUG] [secret:104][39m Done loading secrets
+[36m[2025-07-11 22:14:57 DEBUG] [caching:42][39m Clearing activities cache
+[31m[2025-07-11 22:14:57 ERROR] [run:188][39m The python module 'chaosk8s.pod.actions' does not expose a function called 'kill_pods' in action 'kill-nginx-pod'
+[36m[2025-07-11 22:14:57 DEBUG] [run:189][39m The python module 'chaosk8s.pod.actions' does not expose a function called 'kill_pods' in action 'kill-nginx-pod'
+[36m[2025-07-11 22:19:51 DEBUG] [__init__:101][39m ###############################################################################
+[36m[2025-07-11 22:19:51 DEBUG] [__init__:102][39m Running command 'run'
+[36m[2025-07-11 22:19:51 DEBUG] [__init__:106][39m Using settings file '/home/codespace/.chaostoolkit/settings.yaml'
+[36m[2025-07-11 22:19:51 DEBUG] [settings:31][39m The Chaos Toolkit settings file could not be found at '/home/codespace/.chaostoolkit/settings.yaml'.
+[36m[2025-07-11 22:19:51 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 22:19:51 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 22:19:51 DEBUG] [caching:24][39m Building activity cache...
+[36m[2025-07-11 22:19:51 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2025-07-11 22:19:51 INFO] [experiment:59][39m Validating the experiment's syntax
+[36m[2025-07-11 22:19:51 DEBUG] [configuration:64][39m Loading configuration...
+[36m[2025-07-11 22:19:51 DEBUG] [secret:79][39m Loading secrets...
+[36m[2025-07-11 22:19:51 DEBUG] [secret:104][39m Done loading secrets
+[32m[2025-07-11 22:19:51 INFO] [experiment:112][39m Experiment looks valid
+[36m[2025-07-11 22:19:51 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2025-07-11 22:19:51 DEBUG] [run:224][39m Runtime strategies: hypothesis - default / rollbacks - default
+[36m[2025-07-11 22:19:51 DEBUG] [caching:24][39m Building activity cache...
+[36m[2025-07-11 22:19:51 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2025-07-11 22:19:51 DEBUG] [configuration:64][39m Loading configuration...
+[36m[2025-07-11 22:19:51 DEBUG] [secret:79][39m Loading secrets...
+[36m[2025-07-11 22:19:51 DEBUG] [secret:104][39m Done loading secrets
+[36m[2025-07-11 22:19:51 DEBUG] [configuration:161][39m Loading dynamic configuration...
+[32m[2025-07-11 22:19:51 INFO] [run:440][39m Running experiment: Kill NGINX Pod
+[36m[2025-07-11 22:19:51 DEBUG] [__init__:67][39m Initializing controls
+[32m[2025-07-11 22:19:51 INFO] [run:471][39m Steady-state strategy: default
+[32m[2025-07-11 22:19:51 INFO] [run:477][39m Rollbacks strategy: default
+[36m[2025-07-11 22:19:51 DEBUG] [__init__:472][39m No controls to apply on 'experiment'
+[36m[2025-07-11 22:19:51 DEBUG] [run:654][39m Running steady-state hypothesis before the method
+[32m[2025-07-11 22:19:51 INFO] [hypothesis:205][39m Steady state hypothesis: All pods should be healthy
+[36m[2025-07-11 22:19:51 DEBUG] [__init__:472][39m No controls to apply on 'hypothesis'
+[36m[2025-07-11 22:19:51 DEBUG] [__init__:472][39m No controls to apply on 'activity'
+[32m[2025-07-11 22:19:51 INFO] [activity:232][39m Probe: all-pods-healthy
+[36m[2025-07-11 22:19:51 DEBUG] [python:33][39m Activity 'all-pods-healthy' loaded from '/usr/local/python/3.12.1/lib/python3.12/site-packages/chaosk8s/pod/probes.py'
+[36m[2025-07-11 22:19:51 DEBUG] [__init__:79][39m Using Kubernetes context 'default' from config '/home/codespace/.kube/config'
+[36m[2025-07-11 22:19:51 DEBUG] [probes:344][39m Found 0 failed and 0 not ready pods
+[36m[2025-07-11 22:19:51 DEBUG] [activity:260][39m   => succeeded with 'True'
+[36m[2025-07-11 22:19:51 DEBUG] [__init__:472][39m No controls to apply on 'activity'
+[36m[2025-07-11 22:19:51 DEBUG] [hypothesis:247][39m allowed tolerance is True
+[32m[2025-07-11 22:19:51 INFO] [hypothesis:260][39m Steady state hypothesis is met!
+[36m[2025-07-11 22:19:51 DEBUG] [__init__:472][39m No controls to apply on 'hypothesis'
+[32m[2025-07-11 22:19:51 INFO] [run:778][39m Playing your experiment's method now...
+[36m[2025-07-11 22:19:51 DEBUG] [__init__:472][39m No controls to apply on 'method'
+[36m[2025-07-11 22:19:51 DEBUG] [__init__:472][39m No controls to apply on 'activity'
+[32m[2025-07-11 22:19:51 INFO] [activity:232][39m Action: kill-nginx-pod
+[36m[2025-07-11 22:19:51 DEBUG] [python:33][39m Activity 'kill-nginx-pod' loaded from '/usr/local/python/3.12.1/lib/python3.12/site-packages/chaosk8s/pod/actions.py'
+[33m[2025-07-11 22:19:51 WARNING] [__init__:197][39m delete_pods function is DEPRECATED and will be removed in the next         releases, please use terminate_pods instead
+[36m[2025-07-11 22:19:51 DEBUG] [__init__:79][39m Using Kubernetes context 'default' from config '/home/codespace/.kube/config'
+[36m[2025-07-11 22:19:51 DEBUG] [actions:236][39m Found 1 pods labelled 'run=nginx' in ns chaos-demo
+[36m[2025-07-11 22:19:51 DEBUG] [activity:260][39m   => succeeded with '['nginx']'
+[36m[2025-07-11 22:19:51 DEBUG] [__init__:472][39m No controls to apply on 'activity'
+[36m[2025-07-11 22:19:51 DEBUG] [__init__:472][39m No controls to apply on 'method'
+[36m[2025-07-11 22:19:51 DEBUG] [run:696][39m Running steady-state hypothesis after the method
+[32m[2025-07-11 22:19:51 INFO] [hypothesis:205][39m Steady state hypothesis: All pods should be healthy
+[36m[2025-07-11 22:19:51 DEBUG] [__init__:472][39m No controls to apply on 'hypothesis'
+[36m[2025-07-11 22:19:51 DEBUG] [__init__:472][39m No controls to apply on 'activity'
+[32m[2025-07-11 22:19:51 INFO] [activity:232][39m Probe: all-pods-healthy
+[36m[2025-07-11 22:19:51 DEBUG] [python:33][39m Activity 'all-pods-healthy' loaded from '/usr/local/python/3.12.1/lib/python3.12/site-packages/chaosk8s/pod/probes.py'
+[36m[2025-07-11 22:19:51 DEBUG] [__init__:79][39m Using Kubernetes context 'default' from config '/home/codespace/.kube/config'
+[36m[2025-07-11 22:19:51 DEBUG] [probes:344][39m Found 0 failed and 0 not ready pods
+[36m[2025-07-11 22:19:51 DEBUG] [activity:260][39m   => succeeded with 'True'
+[36m[2025-07-11 22:19:51 DEBUG] [__init__:472][39m No controls to apply on 'activity'
+[36m[2025-07-11 22:19:51 DEBUG] [hypothesis:247][39m allowed tolerance is True
+[32m[2025-07-11 22:19:51 INFO] [hypothesis:260][39m Steady state hypothesis is met!
+[36m[2025-07-11 22:19:51 DEBUG] [__init__:472][39m No controls to apply on 'hypothesis'
+[32m[2025-07-11 22:19:51 INFO] [run:1072][39m Let's rollback...
+[36m[2025-07-11 22:19:51 DEBUG] [__init__:472][39m No controls to apply on 'rollback'
+[32m[2025-07-11 22:19:51 INFO] [rollback:33][39m No declared rollbacks, let's move on.
+[36m[2025-07-11 22:19:51 DEBUG] [__init__:472][39m No controls to apply on 'rollback'
+[32m[2025-07-11 22:19:51 INFO] [run:598][39m Experiment ended with status: completed
+[36m[2025-07-11 22:19:51 DEBUG] [__init__:472][39m No controls to apply on 'experiment'
+[36m[2025-07-11 22:19:51 DEBUG] [__init__:106][39m Cleaning up controls
+[36m[2025-07-11 22:19:51 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2025-07-11 22:37:03 DEBUG] [__init__:101][39m ###############################################################################
+[36m[2025-07-11 22:37:03 DEBUG] [__init__:102][39m Running command 'run'
+[36m[2025-07-11 22:37:03 DEBUG] [__init__:106][39m Using settings file '/home/codespace/.chaostoolkit/settings.yaml'
+[36m[2025-07-11 22:37:03 DEBUG] [settings:31][39m The Chaos Toolkit settings file could not be found at '/home/codespace/.chaostoolkit/settings.yaml'.
+[36m[2025-07-11 22:37:03 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 22:37:03 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 22:37:03 DEBUG] [caching:24][39m Building activity cache...
+[36m[2025-07-11 22:37:03 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2025-07-11 22:37:03 INFO] [experiment:59][39m Validating the experiment's syntax
+[36m[2025-07-11 22:37:03 DEBUG] [configuration:64][39m Loading configuration...
+[36m[2025-07-11 22:37:03 DEBUG] [secret:79][39m Loading secrets...
+[36m[2025-07-11 22:37:03 DEBUG] [secret:104][39m Done loading secrets
+[32m[2025-07-11 22:37:03 INFO] [experiment:112][39m Experiment looks valid
+[36m[2025-07-11 22:37:03 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2025-07-11 22:37:03 DEBUG] [run:224][39m Runtime strategies: hypothesis - default / rollbacks - default
+[36m[2025-07-11 22:37:03 DEBUG] [caching:24][39m Building activity cache...
+[36m[2025-07-11 22:37:03 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2025-07-11 22:37:03 DEBUG] [configuration:64][39m Loading configuration...
+[36m[2025-07-11 22:37:03 DEBUG] [secret:79][39m Loading secrets...
+[36m[2025-07-11 22:37:03 DEBUG] [secret:104][39m Done loading secrets
+[36m[2025-07-11 22:37:03 DEBUG] [configuration:161][39m Loading dynamic configuration...
+[32m[2025-07-11 22:37:03 INFO] [run:440][39m Running experiment: Kill NGINX Pod
+[36m[2025-07-11 22:37:03 DEBUG] [__init__:67][39m Initializing controls
+[32m[2025-07-11 22:37:03 INFO] [run:471][39m Steady-state strategy: default
+[32m[2025-07-11 22:37:03 INFO] [run:477][39m Rollbacks strategy: default
+[36m[2025-07-11 22:37:03 DEBUG] [__init__:472][39m No controls to apply on 'experiment'
+[36m[2025-07-11 22:37:03 DEBUG] [run:654][39m Running steady-state hypothesis before the method
+[32m[2025-07-11 22:37:03 INFO] [hypothesis:205][39m Steady state hypothesis: All pods should be healthy
+[36m[2025-07-11 22:37:03 DEBUG] [__init__:472][39m No controls to apply on 'hypothesis'
+[36m[2025-07-11 22:37:03 DEBUG] [__init__:472][39m No controls to apply on 'activity'
+[32m[2025-07-11 22:37:03 INFO] [activity:232][39m Probe: all-pods-healthy
+[36m[2025-07-11 22:37:03 DEBUG] [python:33][39m Activity 'all-pods-healthy' loaded from '/usr/local/python/3.12.1/lib/python3.12/site-packages/chaosk8s/pod/probes.py'
+[36m[2025-07-11 22:37:03 DEBUG] [__init__:79][39m Using Kubernetes context 'default' from config '/home/codespace/.kube/config'
+[36m[2025-07-11 22:37:03 DEBUG] [probes:344][39m Found 0 failed and 0 not ready pods
+[36m[2025-07-11 22:37:03 DEBUG] [activity:260][39m   => succeeded with 'True'
+[36m[2025-07-11 22:37:03 DEBUG] [__init__:472][39m No controls to apply on 'activity'
+[36m[2025-07-11 22:37:03 DEBUG] [hypothesis:247][39m allowed tolerance is True
+[32m[2025-07-11 22:37:03 INFO] [hypothesis:260][39m Steady state hypothesis is met!
+[36m[2025-07-11 22:37:03 DEBUG] [__init__:472][39m No controls to apply on 'hypothesis'
+[32m[2025-07-11 22:37:03 INFO] [run:778][39m Playing your experiment's method now...
+[36m[2025-07-11 22:37:03 DEBUG] [__init__:472][39m No controls to apply on 'method'
+[36m[2025-07-11 22:37:03 DEBUG] [__init__:472][39m No controls to apply on 'activity'
+[32m[2025-07-11 22:37:03 INFO] [activity:232][39m Action: kill-nginx-pod
+[36m[2025-07-11 22:37:03 DEBUG] [python:33][39m Activity 'kill-nginx-pod' loaded from '/usr/local/python/3.12.1/lib/python3.12/site-packages/chaosk8s/pod/actions.py'
+[33m[2025-07-11 22:37:03 WARNING] [__init__:197][39m delete_pods function is DEPRECATED and will be removed in the next         releases, please use terminate_pods instead
+[36m[2025-07-11 22:37:03 DEBUG] [__init__:79][39m Using Kubernetes context 'default' from config '/home/codespace/.kube/config'
+[36m[2025-07-11 22:37:03 DEBUG] [actions:236][39m Found 1 pods labelled 'app=nginx' in ns chaos-demo
+[36m[2025-07-11 22:37:04 DEBUG] [activity:260][39m   => succeeded with '['nginx-54b9c68f67-65j42']'
+[36m[2025-07-11 22:37:04 DEBUG] [__init__:472][39m No controls to apply on 'activity'
+[36m[2025-07-11 22:37:04 DEBUG] [__init__:472][39m No controls to apply on 'method'
+[36m[2025-07-11 22:37:04 DEBUG] [run:696][39m Running steady-state hypothesis after the method
+[32m[2025-07-11 22:37:04 INFO] [hypothesis:205][39m Steady state hypothesis: All pods should be healthy
+[36m[2025-07-11 22:37:04 DEBUG] [__init__:472][39m No controls to apply on 'hypothesis'
+[36m[2025-07-11 22:37:04 DEBUG] [__init__:472][39m No controls to apply on 'activity'
+[32m[2025-07-11 22:37:04 INFO] [activity:232][39m Probe: all-pods-healthy
+[36m[2025-07-11 22:37:04 DEBUG] [python:33][39m Activity 'all-pods-healthy' loaded from '/usr/local/python/3.12.1/lib/python3.12/site-packages/chaosk8s/pod/probes.py'
+[36m[2025-07-11 22:37:04 DEBUG] [__init__:79][39m Using Kubernetes context 'default' from config '/home/codespace/.kube/config'
+[36m[2025-07-11 22:37:04 DEBUG] [probes:344][39m Found 0 failed and 1 not ready pods
+[36m[2025-07-11 22:37:04 DEBUG] [activity:317][39m Activity failed
+    Traceback (most recent call last):
+      File "/usr/local/python/3.12.1/lib/python3.12/site-packages/chaoslib/provider/python.py", line 56, in run_python_activity
+        return func(**arguments)
+               ^^^^^^^^^^^^^^^^^
+      File "/usr/local/python/3.12.1/lib/python3.12/site-packages/chaosk8s/pod/probes.py", line 355, in all_pods_healthy
+        raise ActivityFailed(m)
+    chaoslib.exceptions.ActivityFailed: the system is unhealthy
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/usr/local/python/3.12.1/lib/python3.12/site-packages/chaoslib/activity.py", line 310, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/python/3.12.1/lib/python3.12/site-packages/chaoslib/provider/python.py", line 58, in run_python_activity
+        raise ActivityFailed(
+      File "/usr/local/python/3.12.1/lib/python3.12/site-packages/chaoslib/provider/python.py", line 56, in run_python_activity
+        return func(**arguments)
+               ^^^^^^^^^^^^^^^^^
+      File "/usr/local/python/3.12.1/lib/python3.12/site-packages/chaosk8s/pod/probes.py", line 355, in all_pods_healthy
+        raise ActivityFailed(m)
+    chaoslib.exceptions.ActivityFailed: chaoslib.exceptions.ActivityFailed: the system is unhealthy
+[31m[2025-07-11 22:37:04 ERROR] [activity:268][39m   => failed: chaoslib.exceptions.ActivityFailed: the system is unhealthy
+[36m[2025-07-11 22:37:04 DEBUG] [__init__:472][39m No controls to apply on 'activity'
+[33m[2025-07-11 22:37:04 WARNING] [hypothesis:232][39m Probe terminated unexpectedly, so its tolerance could not be validated
+[36m[2025-07-11 22:37:04 DEBUG] [__init__:472][39m No controls to apply on 'hypothesis'
+[31m[2025-07-11 22:37:04 CRITICAL] [run:716][39m Steady state probe 'all-pods-healthy' is not in the given tolerance so failing this experiment
+[32m[2025-07-11 22:37:04 INFO] [run:598][39m Experiment ended with status: deviated
+[32m[2025-07-11 22:37:04 INFO] [run:600][39m The steady-state has deviated, a weakness may have been discovered
+[36m[2025-07-11 22:37:04 DEBUG] [__init__:472][39m No controls to apply on 'experiment'
+[36m[2025-07-11 22:37:04 DEBUG] [__init__:106][39m Cleaning up controls
+[36m[2025-07-11 22:37:04 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2025-07-11 22:39:16 DEBUG] [__init__:101][39m ###############################################################################
+[36m[2025-07-11 22:39:16 DEBUG] [__init__:102][39m Running command 'run'
+[36m[2025-07-11 22:39:16 DEBUG] [__init__:106][39m Using settings file '/home/codespace/.chaostoolkit/settings.yaml'
+[36m[2025-07-11 22:39:17 DEBUG] [settings:31][39m The Chaos Toolkit settings file could not be found at '/home/codespace/.chaostoolkit/settings.yaml'.
+[36m[2025-07-11 22:39:17 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 22:39:17 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 22:39:17 DEBUG] [caching:24][39m Building activity cache...
+[36m[2025-07-11 22:39:17 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2025-07-11 22:39:17 INFO] [experiment:59][39m Validating the experiment's syntax
+[36m[2025-07-11 22:39:17 DEBUG] [configuration:64][39m Loading configuration...
+[36m[2025-07-11 22:39:17 DEBUG] [secret:79][39m Loading secrets...
+[36m[2025-07-11 22:39:17 DEBUG] [secret:104][39m Done loading secrets
+[32m[2025-07-11 22:39:17 INFO] [experiment:112][39m Experiment looks valid
+[36m[2025-07-11 22:39:17 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2025-07-11 22:39:17 DEBUG] [run:224][39m Runtime strategies: hypothesis - default / rollbacks - default
+[36m[2025-07-11 22:39:17 DEBUG] [caching:24][39m Building activity cache...
+[36m[2025-07-11 22:39:17 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2025-07-11 22:39:17 DEBUG] [configuration:64][39m Loading configuration...
+[36m[2025-07-11 22:39:17 DEBUG] [secret:79][39m Loading secrets...
+[36m[2025-07-11 22:39:17 DEBUG] [secret:104][39m Done loading secrets
+[36m[2025-07-11 22:39:17 DEBUG] [configuration:161][39m Loading dynamic configuration...
+[32m[2025-07-11 22:39:17 INFO] [run:440][39m Running experiment: Kill NGINX Pod
+[36m[2025-07-11 22:39:17 DEBUG] [__init__:67][39m Initializing controls
+[32m[2025-07-11 22:39:17 INFO] [run:471][39m Steady-state strategy: default
+[32m[2025-07-11 22:39:17 INFO] [run:477][39m Rollbacks strategy: default
+[36m[2025-07-11 22:39:17 DEBUG] [__init__:472][39m No controls to apply on 'experiment'
+[36m[2025-07-11 22:39:17 DEBUG] [run:654][39m Running steady-state hypothesis before the method
+[32m[2025-07-11 22:39:17 INFO] [hypothesis:205][39m Steady state hypothesis: All pods should be healthy
+[36m[2025-07-11 22:39:17 DEBUG] [__init__:472][39m No controls to apply on 'hypothesis'
+[36m[2025-07-11 22:39:17 DEBUG] [__init__:472][39m No controls to apply on 'activity'
+[32m[2025-07-11 22:39:17 INFO] [activity:232][39m Probe: all-pods-healthy
+[36m[2025-07-11 22:39:17 DEBUG] [python:33][39m Activity 'all-pods-healthy' loaded from '/usr/local/python/3.12.1/lib/python3.12/site-packages/chaosk8s/pod/probes.py'
+[36m[2025-07-11 22:39:17 DEBUG] [__init__:79][39m Using Kubernetes context 'default' from config '/home/codespace/.kube/config'
+[36m[2025-07-11 22:39:17 DEBUG] [probes:344][39m Found 0 failed and 0 not ready pods
+[36m[2025-07-11 22:39:17 DEBUG] [activity:260][39m   => succeeded with 'True'
+[36m[2025-07-11 22:39:17 DEBUG] [__init__:472][39m No controls to apply on 'activity'
+[36m[2025-07-11 22:39:17 DEBUG] [hypothesis:247][39m allowed tolerance is True
+[32m[2025-07-11 22:39:17 INFO] [hypothesis:260][39m Steady state hypothesis is met!
+[36m[2025-07-11 22:39:17 DEBUG] [__init__:472][39m No controls to apply on 'hypothesis'
+[32m[2025-07-11 22:39:17 INFO] [run:778][39m Playing your experiment's method now...
+[36m[2025-07-11 22:39:17 DEBUG] [__init__:472][39m No controls to apply on 'method'
+[36m[2025-07-11 22:39:17 DEBUG] [__init__:472][39m No controls to apply on 'activity'
+[32m[2025-07-11 22:39:17 INFO] [activity:232][39m Action: kill-nginx-pod
+[36m[2025-07-11 22:39:17 DEBUG] [python:33][39m Activity 'kill-nginx-pod' loaded from '/usr/local/python/3.12.1/lib/python3.12/site-packages/chaosk8s/pod/actions.py'
+[33m[2025-07-11 22:39:17 WARNING] [__init__:197][39m delete_pods function is DEPRECATED and will be removed in the next         releases, please use terminate_pods instead
+[36m[2025-07-11 22:39:17 DEBUG] [__init__:79][39m Using Kubernetes context 'default' from config '/home/codespace/.kube/config'
+[36m[2025-07-11 22:39:17 DEBUG] [actions:236][39m Found 1 pods labelled 'app=nginx' in ns chaos-demo
+[36m[2025-07-11 22:39:17 DEBUG] [activity:260][39m   => succeeded with '['nginx-54b9c68f67-k2c66']'
+[36m[2025-07-11 22:39:17 DEBUG] [__init__:472][39m No controls to apply on 'activity'
+[36m[2025-07-11 22:39:17 DEBUG] [__init__:472][39m No controls to apply on 'method'
+[36m[2025-07-11 22:39:17 DEBUG] [run:696][39m Running steady-state hypothesis after the method
+[32m[2025-07-11 22:39:17 INFO] [hypothesis:205][39m Steady state hypothesis: All pods should be healthy
+[36m[2025-07-11 22:39:17 DEBUG] [__init__:472][39m No controls to apply on 'hypothesis'
+[36m[2025-07-11 22:39:17 DEBUG] [__init__:472][39m No controls to apply on 'activity'
+[32m[2025-07-11 22:39:17 INFO] [activity:232][39m Probe: all-pods-healthy
+[36m[2025-07-11 22:39:17 DEBUG] [python:33][39m Activity 'all-pods-healthy' loaded from '/usr/local/python/3.12.1/lib/python3.12/site-packages/chaosk8s/pod/probes.py'
+[36m[2025-07-11 22:39:17 DEBUG] [__init__:79][39m Using Kubernetes context 'default' from config '/home/codespace/.kube/config'
+[36m[2025-07-11 22:39:17 DEBUG] [probes:344][39m Found 0 failed and 1 not ready pods
+[36m[2025-07-11 22:39:17 DEBUG] [activity:317][39m Activity failed
+    Traceback (most recent call last):
+      File "/usr/local/python/3.12.1/lib/python3.12/site-packages/chaoslib/provider/python.py", line 56, in run_python_activity
+        return func(**arguments)
+               ^^^^^^^^^^^^^^^^^
+      File "/usr/local/python/3.12.1/lib/python3.12/site-packages/chaosk8s/pod/probes.py", line 355, in all_pods_healthy
+        raise ActivityFailed(m)
+    chaoslib.exceptions.ActivityFailed: the system is unhealthy
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/usr/local/python/3.12.1/lib/python3.12/site-packages/chaoslib/activity.py", line 310, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/python/3.12.1/lib/python3.12/site-packages/chaoslib/provider/python.py", line 58, in run_python_activity
+        raise ActivityFailed(
+      File "/usr/local/python/3.12.1/lib/python3.12/site-packages/chaoslib/provider/python.py", line 56, in run_python_activity
+        return func(**arguments)
+               ^^^^^^^^^^^^^^^^^
+      File "/usr/local/python/3.12.1/lib/python3.12/site-packages/chaosk8s/pod/probes.py", line 355, in all_pods_healthy
+        raise ActivityFailed(m)
+    chaoslib.exceptions.ActivityFailed: chaoslib.exceptions.ActivityFailed: the system is unhealthy
+[31m[2025-07-11 22:39:17 ERROR] [activity:268][39m   => failed: chaoslib.exceptions.ActivityFailed: the system is unhealthy
+[36m[2025-07-11 22:39:17 DEBUG] [__init__:472][39m No controls to apply on 'activity'
+[33m[2025-07-11 22:39:17 WARNING] [hypothesis:232][39m Probe terminated unexpectedly, so its tolerance could not be validated
+[36m[2025-07-11 22:39:17 DEBUG] [__init__:472][39m No controls to apply on 'hypothesis'
+[31m[2025-07-11 22:39:17 CRITICAL] [run:716][39m Steady state probe 'all-pods-healthy' is not in the given tolerance so failing this experiment
+[32m[2025-07-11 22:39:17 INFO] [run:598][39m Experiment ended with status: deviated
+[32m[2025-07-11 22:39:17 INFO] [run:600][39m The steady-state has deviated, a weakness may have been discovered
+[36m[2025-07-11 22:39:17 DEBUG] [__init__:472][39m No controls to apply on 'experiment'
+[36m[2025-07-11 22:39:17 DEBUG] [__init__:106][39m Cleaning up controls
+[36m[2025-07-11 22:39:17 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2025-07-11 22:40:18 DEBUG] [__init__:101][39m ###############################################################################
+[36m[2025-07-11 22:40:18 DEBUG] [__init__:102][39m Running command 'run'
+[36m[2025-07-11 22:40:18 DEBUG] [__init__:106][39m Using settings file '/home/codespace/.chaostoolkit/settings.yaml'
+[36m[2025-07-11 22:40:18 DEBUG] [settings:31][39m The Chaos Toolkit settings file could not be found at '/home/codespace/.chaostoolkit/settings.yaml'.
+[36m[2025-07-11 22:40:18 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 22:40:18 DEBUG] [__init__:472][39m No controls to apply on 'loader'
+[36m[2025-07-11 22:40:18 DEBUG] [caching:24][39m Building activity cache...
+[36m[2025-07-11 22:40:18 DEBUG] [caching:35][39m Cached 2 activities
+[32m[2025-07-11 22:40:18 INFO] [experiment:59][39m Validating the experiment's syntax
+[36m[2025-07-11 22:40:18 DEBUG] [configuration:64][39m Loading configuration...
+[36m[2025-07-11 22:40:18 DEBUG] [secret:79][39m Loading secrets...
+[36m[2025-07-11 22:40:18 DEBUG] [secret:104][39m Done loading secrets
+[32m[2025-07-11 22:40:19 INFO] [experiment:112][39m Experiment looks valid
+[36m[2025-07-11 22:40:19 DEBUG] [caching:42][39m Clearing activities cache
+[36m[2025-07-11 22:40:19 DEBUG] [run:224][39m Runtime strategies: hypothesis - default / rollbacks - default
+[36m[2025-07-11 22:40:19 DEBUG] [caching:24][39m Building activity cache...
+[36m[2025-07-11 22:40:19 DEBUG] [caching:35][39m Cached 2 activities
+[36m[2025-07-11 22:40:19 DEBUG] [configuration:64][39m Loading configuration...
+[36m[2025-07-11 22:40:19 DEBUG] [secret:79][39m Loading secrets...
+[36m[2025-07-11 22:40:19 DEBUG] [secret:104][39m Done loading secrets
+[36m[2025-07-11 22:40:19 DEBUG] [configuration:161][39m Loading dynamic configuration...
+[32m[2025-07-11 22:40:19 INFO] [run:440][39m Running experiment: Kill NGINX Pod
+[36m[2025-07-11 22:40:19 DEBUG] [__init__:67][39m Initializing controls
+[32m[2025-07-11 22:40:19 INFO] [run:471][39m Steady-state strategy: default
+[32m[2025-07-11 22:40:19 INFO] [run:477][39m Rollbacks strategy: default
+[36m[2025-07-11 22:40:19 DEBUG] [__init__:472][39m No controls to apply on 'experiment'
+[36m[2025-07-11 22:40:19 DEBUG] [run:654][39m Running steady-state hypothesis before the method
+[32m[2025-07-11 22:40:19 INFO] [hypothesis:205][39m Steady state hypothesis: All pods should be healthy
+[36m[2025-07-11 22:40:19 DEBUG] [__init__:472][39m No controls to apply on 'hypothesis'
+[36m[2025-07-11 22:40:19 DEBUG] [__init__:472][39m No controls to apply on 'activity'
+[32m[2025-07-11 22:40:19 INFO] [activity:232][39m Probe: all-pods-healthy
+[36m[2025-07-11 22:40:19 DEBUG] [python:33][39m Activity 'all-pods-healthy' loaded from '/usr/local/python/3.12.1/lib/python3.12/site-packages/chaosk8s/pod/probes.py'
+[36m[2025-07-11 22:40:19 DEBUG] [__init__:79][39m Using Kubernetes context 'default' from config '/home/codespace/.kube/config'
+[36m[2025-07-11 22:40:19 DEBUG] [probes:344][39m Found 0 failed and 0 not ready pods
+[36m[2025-07-11 22:40:19 DEBUG] [activity:260][39m   => succeeded with 'True'
+[36m[2025-07-11 22:40:19 DEBUG] [__init__:472][39m No controls to apply on 'activity'
+[36m[2025-07-11 22:40:19 DEBUG] [hypothesis:247][39m allowed tolerance is True
+[32m[2025-07-11 22:40:19 INFO] [hypothesis:260][39m Steady state hypothesis is met!
+[36m[2025-07-11 22:40:19 DEBUG] [__init__:472][39m No controls to apply on 'hypothesis'
+[32m[2025-07-11 22:40:19 INFO] [run:778][39m Playing your experiment's method now...
+[36m[2025-07-11 22:40:19 DEBUG] [__init__:472][39m No controls to apply on 'method'
+[36m[2025-07-11 22:40:19 DEBUG] [__init__:472][39m No controls to apply on 'activity'
+[32m[2025-07-11 22:40:19 INFO] [activity:232][39m Action: kill-nginx-pod
+[36m[2025-07-11 22:40:19 DEBUG] [python:33][39m Activity 'kill-nginx-pod' loaded from '/usr/local/python/3.12.1/lib/python3.12/site-packages/chaosk8s/pod/actions.py'
+[33m[2025-07-11 22:40:19 WARNING] [__init__:197][39m delete_pods function is DEPRECATED and will be removed in the next         releases, please use terminate_pods instead
+[36m[2025-07-11 22:40:19 DEBUG] [__init__:79][39m Using Kubernetes context 'default' from config '/home/codespace/.kube/config'
+[36m[2025-07-11 22:40:19 DEBUG] [actions:236][39m Found 1 pods labelled 'app=nginx' in ns chaos-demo
+[36m[2025-07-11 22:40:19 DEBUG] [activity:260][39m   => succeeded with '['nginx-54b9c68f67-ckxrp']'
+[36m[2025-07-11 22:40:19 DEBUG] [__init__:472][39m No controls to apply on 'activity'
+[36m[2025-07-11 22:40:19 DEBUG] [__init__:472][39m No controls to apply on 'method'
+[36m[2025-07-11 22:40:19 DEBUG] [run:696][39m Running steady-state hypothesis after the method
+[32m[2025-07-11 22:40:19 INFO] [hypothesis:205][39m Steady state hypothesis: All pods should be healthy
+[36m[2025-07-11 22:40:19 DEBUG] [__init__:472][39m No controls to apply on 'hypothesis'
+[36m[2025-07-11 22:40:19 DEBUG] [__init__:472][39m No controls to apply on 'activity'
+[32m[2025-07-11 22:40:19 INFO] [activity:232][39m Probe: all-pods-healthy
+[36m[2025-07-11 22:40:19 DEBUG] [python:33][39m Activity 'all-pods-healthy' loaded from '/usr/local/python/3.12.1/lib/python3.12/site-packages/chaosk8s/pod/probes.py'
+[36m[2025-07-11 22:40:19 DEBUG] [__init__:79][39m Using Kubernetes context 'default' from config '/home/codespace/.kube/config'
+[36m[2025-07-11 22:40:19 DEBUG] [probes:344][39m Found 0 failed and 1 not ready pods
+[36m[2025-07-11 22:40:19 DEBUG] [activity:317][39m Activity failed
+    Traceback (most recent call last):
+      File "/usr/local/python/3.12.1/lib/python3.12/site-packages/chaoslib/provider/python.py", line 56, in run_python_activity
+        return func(**arguments)
+               ^^^^^^^^^^^^^^^^^
+      File "/usr/local/python/3.12.1/lib/python3.12/site-packages/chaosk8s/pod/probes.py", line 355, in all_pods_healthy
+        raise ActivityFailed(m)
+    chaoslib.exceptions.ActivityFailed: the system is unhealthy
+    
+    During handling of the above exception, another exception occurred:
+    
+    Traceback (most recent call last):
+      File "/usr/local/python/3.12.1/lib/python3.12/site-packages/chaoslib/activity.py", line 310, in run_activity
+        result = run_python_activity(activity, configuration, secrets)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      File "/usr/local/python/3.12.1/lib/python3.12/site-packages/chaoslib/provider/python.py", line 58, in run_python_activity
+        raise ActivityFailed(
+      File "/usr/local/python/3.12.1/lib/python3.12/site-packages/chaoslib/provider/python.py", line 56, in run_python_activity
+        return func(**arguments)
+               ^^^^^^^^^^^^^^^^^
+      File "/usr/local/python/3.12.1/lib/python3.12/site-packages/chaosk8s/pod/probes.py", line 355, in all_pods_healthy
+        raise ActivityFailed(m)
+    chaoslib.exceptions.ActivityFailed: chaoslib.exceptions.ActivityFailed: the system is unhealthy
+[31m[2025-07-11 22:40:19 ERROR] [activity:268][39m   => failed: chaoslib.exceptions.ActivityFailed: the system is unhealthy
+[36m[2025-07-11 22:40:19 DEBUG] [__init__:472][39m No controls to apply on 'activity'
+[33m[2025-07-11 22:40:19 WARNING] [hypothesis:232][39m Probe terminated unexpectedly, so its tolerance could not be validated
+[36m[2025-07-11 22:40:19 DEBUG] [__init__:472][39m No controls to apply on 'hypothesis'
+[31m[2025-07-11 22:40:19 CRITICAL] [run:716][39m Steady state probe 'all-pods-healthy' is not in the given tolerance so failing this experiment
+[32m[2025-07-11 22:40:19 INFO] [run:598][39m Experiment ended with status: deviated
+[32m[2025-07-11 22:40:19 INFO] [run:600][39m The steady-state has deviated, a weakness may have been discovered
+[36m[2025-07-11 22:40:19 DEBUG] [__init__:472][39m No controls to apply on 'experiment'
+[36m[2025-07-11 22:40:19 DEBUG] [__init__:106][39m Cleaning up controls
+[36m[2025-07-11 22:40:19 DEBUG] [caching:42][39m Clearing activities cache
